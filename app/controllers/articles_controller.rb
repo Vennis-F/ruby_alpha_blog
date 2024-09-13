@@ -17,6 +17,7 @@ class ArticlesController < ApplicationController
   def create
     # debugger
     @article = Article.new(article_params)
+    @article.user_id = User.first.id
     # render plain: article.inspect
     if @article.save
       flash[:notice] = "Article created successfully."

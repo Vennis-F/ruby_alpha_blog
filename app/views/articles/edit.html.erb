@@ -1,5 +1,6 @@
 <h1>Update new Article</h1>
 
 <%= render "form"%>
+<p><b>By: </b><%=@article.user.username if @article.user%></p>
 
 <%= link_to 'Cancel and return list articles', articles_path %>

@@ -2,6 +2,8 @@
 
 <p><b>Title: </b><%=@article.title%></p>
 <p><b>Description: </b><%=@article.description%></p>
+<p><b>By: </b><%=@article.user.username if @article.user%></p>
+
 
 <p><%= link_to 'Back', articles_path %></p>
 <p><%= link_to 'Edit', edit_article_path(@article) %></p>
