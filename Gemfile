@@ -3,6 +3,7 @@ source "https://rubygems.org"
 gem "ostruct"
 gem "bootstrap"
 gem "sassc-rails"
+gem "email_validator"
 
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"

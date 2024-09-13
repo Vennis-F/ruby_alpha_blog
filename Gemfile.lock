@@ -104,6 +104,8 @@ GEM
       irb (~> 1.10)
       reline (>= 0.3.8)
     drb (2.2.1)
+    email_validator (2.2.4)
+      activemodel
     erubi (1.13.0)
     execjs (2.9.1)
     ffi (1.17.0-x64-mingw-ucrt)
@@ -304,6 +306,7 @@ DEPENDENCIES
   brakeman
   capybara
   debug
+  email_validator
   importmap-rails
   jbuilder
   ostruct
