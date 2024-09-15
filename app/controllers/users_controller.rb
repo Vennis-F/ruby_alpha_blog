@@ -7,7 +7,9 @@ class UsersController < ApplicationController
 
   def edit; end
 
-  def show; end
+  def show
+    @articles = @user.articles
+  end
 
   def create
     # debugger
