@@ -1,0 +1,16 @@
+<h1>Alpha blogers</h1>
+
+<br>
+
+<% @users.each do |u| %>
+    <div class="card mb-3" style="width: 18rem;">
+        <%= gavatar_for u %>
+        <div class="card-body">
+            <h5 class="card-title"><%= u.username %></h5>
+            <p class="card-text"><%= pluralize(u.articles.count, "article") %></p>
+            <%= link_to "View profile", u, class: "btn btn-primary" %>
+            <%= link_to "Edit profile", edit_user_path(u), class: "btn btn-primary" %>
+            <p class="card-text"><%= time_ago_in_words(u.updated_at) %></p>
+        </div>
+    </div>
+<% end %>

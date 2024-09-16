@@ -2,7 +2,7 @@
 
 <p><b>Title: </b><%=@article.title%></p>
 <p><b>Description: </b><%=@article.description%></p>
-<p><b>By: </b><%=@article.user.username if @article.user%></p>
+<p><b>By: </b><%=@article.user.username if @article.user%> <%= link_to gavatar_for(@article.user, size: 30), user_path(@article.user) if @article.user%></p>
 
 
 <p><%= link_to 'Back', articles_path %></p>
